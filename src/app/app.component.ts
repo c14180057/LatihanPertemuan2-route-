@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { InputComponent } from './input/input.component';
 import { ListComponent } from './list/list.component';
+import { EditComponent } from './edit/edit.component';
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -34,5 +35,9 @@ export class AppComponent  {
  getData()
  {
    return this.listJurusan;
+ }
+ edit(nama,desk)
+ {
+
  }
 }

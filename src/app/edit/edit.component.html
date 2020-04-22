@@ -1,1 +1,8 @@
-<p >Halo</p>
+ <br><br>
+ Nama Jurusan : <input [(ngModel)]="nama" type="text"/>
+<br><br>
+ Penjelasan Jurusan : <input [(ngModel)]="ket" type="text"/>
+<br><br>
+ <button (click)="appComponent.edit(nama,ket)">Submit</button>
+ <br><br>
+ <b>* yang dapat diubah hanya penjelasan jurusan</b>
