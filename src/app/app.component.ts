@@ -17,6 +17,7 @@ export class AppComponent  {
     this.router.navigate(['/input']);
 
   }
+  
   Edit()
   {
       this.router.navigate(['/edit']);
@@ -38,6 +39,14 @@ export class AppComponent  {
  }
  edit(nama,desk)
  {
-
+for(var i=0;i<this.listJurusan.length;i++)
+{
+  if(this.listJurusan[i][0]==nama)
+  {
+    this.listJurusan[i][1]=desk;
+    break;
+  }
+}
+alert("Edit Berhasil")
  }
 }
