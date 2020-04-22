@@ -10,7 +10,7 @@ import { ListComponent } from './list/list.component';
 import {Routes,RouterModule} from '@angular/router';
 const ROUTES:Routes=[
   {
-    path:'home',component:InputComponent
+    path:'input',component:InputComponent
   }
   ,
   {

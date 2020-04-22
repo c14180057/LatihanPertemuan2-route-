@@ -7,4 +7,16 @@ import { Router } from '@angular/router';
 })
 export class AppComponent  {
   name = 'Angular';
+   constructor (private router : Router) {}
+  Input(){
+    this.router.navigate(['/input']);
+  }
+  Edit()
+  {
+      this.router.navigate(['/edit']);
+  }
+  List()
+  {
+      this.router.navigate(['/list']);
+  }
 }
