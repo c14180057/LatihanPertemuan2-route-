@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { InputComponent } from './input/input.component';
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -10,6 +11,7 @@ export class AppComponent  {
    constructor (private router : Router) {}
   Input(){
     this.router.navigate(['/input']);
+
   }
   Edit()
   {
