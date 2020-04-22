@@ -25,17 +25,8 @@ export class AppComponent  {
   }
   input(nama,desk)
  {
-   if(nama.toString()!=""&&desk.toString()!="")
-   {
-this.jurusan=[nama,desk];
-  this.listJurusan.push(this.jurusan);
-   alert(nama)
-   }
-   else
-   {
-     alert("Isi Seluruh Input")
-     alert(nama)
-   }
-  
+  this.jurusan=[nama,desk];
+  this.listJurusan.push(this.jurusan);  
+  alert("Success")
  }
 }
