@@ -11,6 +11,6 @@ export class ListComponent implements OnInit {
   list = [];
   ngOnInit() {
     this.list = this.appComponent.getData();
-  }
+  
   }
 }

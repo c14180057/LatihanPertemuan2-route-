@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { InputComponent } from './input/input.component';
+import { ListComponent } from './list/list.component';
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -26,7 +27,8 @@ export class AppComponent  {
   input(nama,desk)
  {
   this.jurusan=[nama,desk];
-  this.listJurusan.push(this.jurusan);  
+  this.listJurusan.push(this.jurusan); 
+
   alert("Success")
  }
  getData()
