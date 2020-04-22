@@ -25,7 +25,7 @@ export class AppComponent  {
   }
   input(nama,desk)
  {
-   if(nama!=""&&desk!="")
+   if(nama.toString()!=""&&desk.toString()!="")
    {
 this.jurusan=[nama,desk];
   this.listJurusan.push(this.jurusan);
