@@ -9,6 +9,7 @@ export class ListComponent implements OnInit {
 
   constructor( private appComponent: AppComponent) { }
   list = [];
+
   ngOnInit() {
     this.list = this.appComponent.getData();
   
