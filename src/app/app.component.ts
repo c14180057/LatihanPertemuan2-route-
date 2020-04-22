@@ -29,4 +29,8 @@ export class AppComponent  {
   this.listJurusan.push(this.jurusan);  
   alert("Success")
  }
+ getData()
+ {
+   return this.listJurusan;
+ }
 }
