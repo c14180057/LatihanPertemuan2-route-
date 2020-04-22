@@ -8,6 +8,8 @@ import { InputComponent } from './input/input.component';
 })
 export class AppComponent  {
   name = 'Angular';
+  jurusan;
+  listJurusan=[];
    constructor (private router : Router) {}
   Input(){
     this.router.navigate(['/input']);
@@ -21,4 +23,10 @@ export class AppComponent  {
   {
       this.router.navigate(['/list']);
   }
+  input(nama,desk)
+ {
+   this.jurusan=[nama,desk];
+  this.listJurusan.push(this.jurusan);
+  
+ }
 }
